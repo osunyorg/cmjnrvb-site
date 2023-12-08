@@ -6,7 +6,7 @@ items:
   kind: page
   children: []
 - title: Archives
-  target: "/archives-1/"
+  target: "/projets/"
   kind: page
   children: []
 
