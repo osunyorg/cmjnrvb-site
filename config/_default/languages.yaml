@@ -6,7 +6,7 @@ fr:
   languageCode: fr
   languageName: Français
   permalinks:
-    posts: /projets/:year-:month-:day-:slug/
+    posts: /archives/:year-:month-:day-:slug/
   taxonomies:
     administrator: administrators
     author: authors

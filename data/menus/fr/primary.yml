@@ -2,7 +2,7 @@
 title: Menu principal
 items:
 - title: Projets
-  target: "/projets/"
+  target: "/archives/"
   kind: page
   children: []
 - title: Archives
