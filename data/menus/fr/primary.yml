@@ -17,4 +17,8 @@ items:
   target: "/organisations/"
   kind: page
   children: []
+- title: Archives
+  target: "/archives-1/"
+  kind: page
+  children: []
 
