@@ -1,12 +1,4 @@
 ---
 title: Menu principal
-items:
-- title: Projets
-  target: "/archives/"
-  kind: page
-  children: []
-- title: Archives
-  target: "/projets/"
-  kind: page
-  children: []
+items: []
 
