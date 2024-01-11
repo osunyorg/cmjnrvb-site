@@ -1,0 +1,39 @@
+.page__home
+    .hero
+        min-height: 0
+        padding: 0
+        .content
+            > h1, hgroup
+                margin-top: 0
+                width: auto
+    .block-posts--list
+        @include media-breakpoint-up(desktop)
+            position: fixed
+            height: 100%
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            min-height: 80vh
+            display: flex
+            justify-content: end
+            align-items: end
+            padding-top: var(--header-height) !important
+
+    #document-footer
+        position: fixed
+        bottom: 0
+        right: 0
+        padding: space(2) space(1)
+        > .container:first-child
+            display: none
+        .nav-legal
+            display: none
+        .footer-credit 
+            a
+                text-transform: uppercase
+                text-decoration: none
+                &::after
+                    display: none
+                &:hover
+                    text-decoration: underline

@@ -1,0 +1,47 @@
+.block-posts--list
+    article 
+        .post-meta
+            display: none
+        .media 
+            img
+                aspect-ratio: auto
+                border-radius: 15px
+    @include media-breakpoint-up(desktop)
+        article
+            position: static !important
+            display: block
+            padding: 0 !important
+            margin: 0 !important
+            .post-content
+                width: auto !important
+                position: relative
+                z-index: 2
+                display: flex
+                gap: space(2)
+                h2, .post-categories
+                    @include h3
+                    margin: 0
+            .media
+                pointer-events: none
+                opacity: 0
+                width: auto !important
+                position: absolute !important
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+            &.portrait, &.square
+                .media
+                    top: space(10)
+                    bottom: space(10)
+                    left: space(50)
+                    right: space(50)
+            &.landscape
+                .media
+                    top: space(50)
+                    bottom: space(50)
+                    left: space(10)
+                    right: space(10)
+            &:hover
+                .media
+                    opacity: 1
