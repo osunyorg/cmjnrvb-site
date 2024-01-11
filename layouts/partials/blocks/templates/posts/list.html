@@ -8,10 +8,14 @@
       <article class='post {{ $direction }}' itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-content">
           {{- $title := partial "PrepareHTML" .Title -}}
-          <h2><a href="{{ .Permalink }}" title="{{ safeHTML (i18n "commons.more_aria" (dict "Title" $title)) }}">{{ $title }}</a></h2>
-          {{ if site.Params.posts.index.show_categories }}
-            {{- partial "posts/categories" . -}}
-          {{ end }}
+          <h2><a href="{{ chomp .Params.summary }}" target="_blank" rel="noopener" title="{{ safeHTML (i18n "commons.more_aria" (dict "Title" $title)) }}">{{ $title }}</a></h2>
+          {{- with .GetTerms "posts_categories" -}}
+            <ul class="post-categories">
+              {{- range . -}}
+                <li>{{- safeHTML .Title -}}</li>
+              {{- end }}
+            </ul>
+          {{- end -}}
         </div>
         <div class="media">
           {{- if .Params.image -}}

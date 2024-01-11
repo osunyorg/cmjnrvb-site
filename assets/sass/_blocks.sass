@@ -1,11 +1,25 @@
 .block-posts--list
-    article 
+    .top
+        margin-bottom: 0
+        a
+            text-transform: none
+            @include h3
+            &::after
+                display: none
+    article
         .post-meta
             display: none
         .media 
             img
                 aspect-ratio: auto
-                border-radius: 15px
+        a[target="_blank"]
+            &::after
+                display: none
+    @include media-breakpoint-down(desktop)
+        article 
+            .media 
+                img
+                    border-radius: space(2)
     @include media-breakpoint-up(desktop)
         article
             position: static !important
@@ -18,9 +32,17 @@
                 z-index: 2
                 display: flex
                 gap: space(2)
-                h2, .post-categories
-                    @include h3
-                    margin: 0
+            h2 a
+                @include link
+                // &:not(:hover)
+                //     text-decoration-color: transparent
+            h2, .post-categories
+                @include h3
+                margin: 0
+            .post-categories
+                opacity: 0
+                li
+                    color: $color-accent
             .media
                 pointer-events: none
                 opacity: 0
@@ -43,5 +65,5 @@
                     left: space(10)
                     right: space(10)
             &:hover
-                .media
+                .media, .post-categories
                     opacity: 1

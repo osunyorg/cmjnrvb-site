@@ -9,6 +9,7 @@
     .block-posts--list
         @include media-breakpoint-up(desktop)
             position: fixed
+            padding-bottom: space(6)
             height: 100%
             top: 0
             left: 0
@@ -19,12 +20,11 @@
             justify-content: end
             align-items: end
             padding-top: var(--header-height) !important
-
     #document-footer
         position: fixed
         bottom: 0
         right: 0
-        padding: space(2) space(1)
+        padding: space(6) space(1)
         > .container:first-child
             display: none
         .nav-legal
@@ -35,5 +35,3 @@
                 text-decoration: none
                 &::after
                     display: none
-                &:hover
-                    text-decoration: underline
