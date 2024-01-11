@@ -34,14 +34,14 @@
                 gap: space(2)
             h2 a
                 @include link
-                // &:not(:hover)
-                //     text-decoration-color: transparent
             h2, .post-categories
                 @include h3
+                letter-spacing: -0.04em
                 margin: 0
             .post-categories
                 opacity: 0
                 li
+                    @include h3
                     color: $color-accent
             .media
                 pointer-events: none
