@@ -6,6 +6,10 @@
             @include h3
             &::after
                 display: none
+        @include media-breakpoint-down(desktop)
+            margin-bottom: space(4)
+            a
+                @include h2
     article
         .post-meta
             display: none
