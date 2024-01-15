@@ -15,6 +15,16 @@
         a[target="_blank"]
             &::after
                 display: none
+        h2 a
+            @include link
+        h2, .post-categories
+            @include h3
+            letter-spacing: -0.04em
+            margin: 0
+        .post-categories
+            li
+                @include h3
+                color: $color-accent
     @include media-breakpoint-down(desktop)
         article 
             .media 
@@ -32,17 +42,8 @@
                 z-index: 2
                 display: flex
                 gap: space(2)
-            h2 a
-                @include link
-            h2, .post-categories
-                @include h3
-                letter-spacing: -0.04em
-                margin: 0
             .post-categories
                 opacity: 0
-                li
-                    @include h3
-                    color: $color-accent
             .media
                 pointer-events: none
                 opacity: 0

@@ -22,11 +22,34 @@
             justify-content: end
             align-items: end
             padding-top: var(--header-height) !important
+        @include media-breakpoint-between(md, desktop)
+            .list
+                display: flex
+                flex-wrap: wrap
+                gap: $grid-gutter
+                article + article
+                    margin-top: 0
+                article:nth-child(6n + 1)
+                    width: col(7)
+                article:nth-child(6n + 2)
+                    width: col(5)
+                article:nth-child(6n + 3),
+                article:nth-child(6n + 6),
+                    width: col(12)
+                    padding-left: col(3.5)
+                    padding-right: col(3.5)
+                article:nth-child(6n + 4)
+                    width: col(5)
+                article:nth-child(6n + 5)
+                    width: col(7)
+        @include media-breakpoint-down(desktop)
+            article
+                .media
+                    max-width: none
+
     #document-footer
-        position: fixed
-        bottom: 0
-        right: 0
         padding: space(6) space(1)
+        text-align: right
         > .container:first-child
             display: none
         .nav-legal
@@ -37,3 +60,7 @@
                 text-decoration: none
                 &::after
                     display: none
+        @include media-breakpoint-up(desktop)
+            position: fixed
+            bottom: 0
+            right: 0
