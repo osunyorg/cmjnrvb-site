@@ -1,12 +1,12 @@
 ---
 title: Liens sociaux
 items:
-- title: Previous website
-  target: https://2023.cmjnrvb.net/
-  kind: url
-  children: []
 - title: Instagram
   target: https://www.instagram.com/cmjn_rvb/
+  kind: url
+  children: []
+- title: Previous website
+  target: https://2023.cmjnrvb.net/
   kind: url
   children: []
 
