@@ -1,4 +1,8 @@
 ---
 title: Liens sociaux
-items: []
+items:
+- title: Previous website
+  target: https://2023.cmjnrvb.net/
+  kind: url
+  children: []
 
