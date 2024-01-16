@@ -11,6 +11,8 @@
     .block-posts--list
         .top
             pointer-events: none
+        article
+            border-bottom: 0
         @include media-breakpoint-up(desktop)
             position: fixed
             padding-bottom: space(6)
@@ -46,6 +48,8 @@
                     width: col(7)
         @include media-breakpoint-down(desktop)
             article
+                margin-top: 0
+                padding-bottom: space(10)
                 .media
                     max-width: none
                 .post-content, .post-categories
