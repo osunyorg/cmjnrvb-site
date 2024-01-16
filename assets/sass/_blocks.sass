@@ -7,10 +7,6 @@
             letter-spacing: -0.04em
             &::after
                 display: none
-        @include media-breakpoint-down(desktop)
-            margin-bottom: space(4)
-            a
-                @include h2
     article
         .post-meta
             display: none
@@ -31,7 +27,14 @@
                 @include h3
                 color: $color-accent
     @include media-breakpoint-down(desktop)
-        article 
+        .top
+            margin-bottom: space(4)
+            a
+                @include h2
+        article
+            h2 a
+                text-decoration-color: inherit
+                text-underline-offset: space(1)
             .media 
                 img
                     border-radius: space(2)
