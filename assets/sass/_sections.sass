@@ -6,6 +6,8 @@
             > h1, hgroup
                 margin-top: 0
                 width: auto
+                @include media-breakpoint-up(md)
+                    font-size: $h1-size-desktop
     .block-posts--list
         .top
             pointer-events: none
