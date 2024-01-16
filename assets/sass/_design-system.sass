@@ -21,7 +21,6 @@ h4, .h4
 
 footer#document-footer
     padding: space(6) space(1)
-    text-align: right
     > .container:first-child
         display: none
     .nav-legal
@@ -29,6 +28,7 @@ footer#document-footer
     .container + .container
         display: flex
         align-items: end
+        gap: space(12)
         margin-top: 0
         > * + *
             margin-top: 0
@@ -39,10 +39,21 @@ footer#document-footer
                 display: none
     .footer-social
         order: 0
-        padding-right: space(12)
+    .nav-social
+        display: flex
+        align-items: end
+        gap: space(12)
     @include media-breakpoint-up(md)
+        text-align: right
         .container + .container
             justify-content: end
+    @include media-breakpoint-down(md)
+        .nav-social
+            flex-direction: column-reverse
+            align-items: start
+            gap: space(2)
+        .container + .container
+            justify-content: space-between
     @include media-breakpoint-up(desktop)
         position: fixed
         bottom: 0
