@@ -6,3 +6,42 @@ h1, .h1, h2, .h2, h3, .h3
 
 h4, .h4
     letter-spacing: -0.02em
+
+.btn
+    background: $color-action-background
+    line-height: 1
+    &[target="_blank"]:not(.icon)
+        &:after
+            display: none
+    &:hover
+        background: $color-text
+        color: $color-background
+
+footer#document-footer
+    padding: space(6) space(1)
+    text-align: right
+    > .container:first-child
+        display: none
+    .nav-legal
+        display: none
+    .container + .container
+        display: flex
+        align-items: end
+        margin-top: 0
+        > * + *
+            margin-top: 0
+        a
+            text-decoration: underline
+            text-underline-offset: space(1)
+            &::after
+                display: none
+    .footer-social
+        order: 0
+        padding-right: space(12)
+    @include media-breakpoint-up(md)
+        .container + .container
+            justify-content: end
+    @include media-breakpoint-up(desktop)
+        position: fixed
+        bottom: 0
+        right: 0
