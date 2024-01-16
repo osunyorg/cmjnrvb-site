@@ -5,4 +5,8 @@ items:
   target: https://2023.cmjnrvb.net/
   kind: url
   children: []
+- title: Instagram
+  target: https://www.instagram.com/cmjn_rvb/
+  kind: url
+  children: []
 
