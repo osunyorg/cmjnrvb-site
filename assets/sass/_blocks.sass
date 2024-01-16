@@ -23,9 +23,13 @@
             letter-spacing: -0.04em
             margin: 0
         .post-categories
+            gap: 0
             li
                 @include h3
                 color: $color-accent
+                + li
+                    &:before
+                        content: ' + '
     @include media-breakpoint-down(desktop)
         .top
             margin-bottom: space(4)
