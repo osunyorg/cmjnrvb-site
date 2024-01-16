@@ -7,3 +7,10 @@ params:
     position: hero
   search:
     active: false
+  image_sizes:
+    sections:
+      posts:
+        item:
+          mobile:   375
+          tablet:   600
+          desktop:  1100
