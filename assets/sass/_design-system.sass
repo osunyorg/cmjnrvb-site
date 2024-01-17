@@ -35,6 +35,7 @@ footer#document-footer
         a, span, small
             @include body-text
             line-height: 1
+            display: inline-block
         a
             text-decoration: underline
             text-underline-offset: space(1)
@@ -49,6 +50,7 @@ footer#document-footer
     @include media-breakpoint-up(md)
         text-align: right
         .container + .container
+            align-items: baseline
             justify-content: end
     @include media-breakpoint-down(md)
         padding-bottom: space(3)
