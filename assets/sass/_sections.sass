@@ -4,11 +4,12 @@
         padding: 0
         .content
             padding-top: space(12)
-            > h1, hgroup
+            .hero-text
                 margin-top: 0
                 width: auto
                 @include media-breakpoint-up(md)
-                    font-size: $h1-size-desktop
+                    --h1-size: #{$h1-size-desktop}
+
     .block-posts--list
         .top
             pointer-events: none
@@ -37,18 +38,18 @@
                 article + article
                     margin-top: 0
                 article:nth-child(6n + 1)
-                    width: col(7)
+                    width: columns(7)
                 article:nth-child(6n + 2)
-                    width: col(5)
+                    width: columns(5)
                 article:nth-child(6n + 3),
                 article:nth-child(6n + 6)
-                    width: col(12)
-                    padding-left: col(3.5)
-                    padding-right: col(3.5)
+                    width: columns(12)
+                    padding-left: columns(3.5)
+                    padding-right: columns(3.5)
                 article:nth-child(6n + 4)
-                    width: col(5)
+                    width: columns(5)
                 article:nth-child(6n + 5)
-                    width: col(7)
+                    width: columns(7)
         @include media-breakpoint-down(desktop)
             article
                 margin-top: 0

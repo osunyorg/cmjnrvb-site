@@ -15,3 +15,6 @@ params:
           mobile:   375
           tablet:   600
           desktop:  1100
+  debug:
+    active: false
+    productionUrl: https://www.cmjnrvb.net
