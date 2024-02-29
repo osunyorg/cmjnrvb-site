@@ -19,6 +19,9 @@ h4, .h4
         background: $color-text
         color: $color-background
 
+// .document-content
+//     z-index: 10
+
 footer#document-footer
     padding: space(6) space(1)
     > .container:first-child
@@ -61,6 +64,9 @@ footer#document-footer
         .container + .container
             justify-content: space-between
     @include media-breakpoint-up(desktop)
+        left: auto
         position: fixed
         bottom: 0
         right: 0
+        .container
+            width: auto
