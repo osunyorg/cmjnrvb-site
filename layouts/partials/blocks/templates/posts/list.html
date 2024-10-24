@@ -8,8 +8,13 @@
       <article class='post {{ $direction }}' itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-content">
           {{- $title := partial "PrepareHTML" .Title -}}
+          {{- $linkTitle := i18n "commons.more_aria" (dict "Title" $title) -}}
           {{- $url := .Params.summary | plainify -}}
-          <h2><a href="{{ chomp $url }}" target="_blank" rel="noopener" title="{{ safeHTML (i18n "commons.more_aria" (dict "Title" $title)) }}">{{ $title }}</a></h2>
+          <h2>
+            <a href="{{ chomp $url }}" target="_blank" rel="noopener" title="{{ safeHTML $linkTitle }}">
+              {{ $title }}
+            </a>
+          </h2>
           {{- with .GetTerms "posts_categories" -}}
             <ul class="post-categories">
               {{- range . -}}
