@@ -1,6 +1,6 @@
 <div class="list">
   {{ range $post := .posts -}}
-    {{ with site.GetPage (printf "/posts/%s" $post) }}
+    {{ with site.GetPage .path }}
       {{- $direction := "" -}}
       {{ if .Params.image }}
         {{- $direction = partial "GetImageDirection" .Params.image -}}
