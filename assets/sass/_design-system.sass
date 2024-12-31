@@ -22,6 +22,21 @@ h4, .h4
 // .document-content
 //     z-index: 10
 
+header#document-header
+    nav.primary-menu
+        @include media-breakpoint-down(md)
+            .header-button
+                display: none
+        .menu
+            a
+                @extend .btn
+            @include media-breakpoint-down(md)
+                display: block
+                margin-top: $header-nav-padding-y
+                position: absolute
+                right: var(--grid-gutter)
+                top: 0
+
 footer#document-footer
     padding: space(6) space(1)
     > .container:first-child
