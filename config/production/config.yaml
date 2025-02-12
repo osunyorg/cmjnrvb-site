@@ -2,6 +2,11 @@
 
 baseURL: https://www.cmjnrvb.net
 
+## OSUNY
+osuny:
+  website:
+    id: bfeaab0c-4b84-45d7-a2db-bd5f74abc45c
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
