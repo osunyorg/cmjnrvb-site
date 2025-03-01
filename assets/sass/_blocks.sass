@@ -54,6 +54,8 @@
                 z-index: 2
                 display: flex
                 gap: space(2)
+                @include in-page-without-sidebar
+                    flex-direction: row
             .post-categories
                 opacity: 0
             .media
