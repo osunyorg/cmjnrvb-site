@@ -1,0 +1,38 @@
+<div class="list">
+  {{ range $post := .posts -}}
+    {{ with site.GetPage .path }}
+      {{- $direction := "" -}}
+      {{ if .Params.image }}
+        {{- $direction = partial "commons/image/helpers/GetDirection" .Params.image -}}
+      {{ end }}
+      <article class='post {{ $direction }}' itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-content">
+          {{- $title := partial "PrepareHTML" .Title -}}
+          {{- $linkTitle := i18n "commons.more_aria" (dict "Title" $title) -}}
+          {{- $url := .Params.summary | plainify -}}
+          <h2>
+            <a href="{{ chomp $url }}" target="_blank" rel="noopener" title="{{ safeHTML $linkTitle }}">
+              {{ $title }}
+            </a>
+          </h2>
+          {{- with .GetTerms "posts_categories" -}}
+            <ul class="post-categories">
+              {{- range . -}}
+                <li>{{- safeHTML .Title -}}</li>
+              {{- end }}
+            </ul>
+          {{- end -}}
+        </div>
+        <div class="media">
+          {{- if .Params.image -}}
+            {{- partial "commons/image.html" (dict
+                "image"    .Params.image
+                "sizes"    site.Params.image_sizes.sections.posts.item
+              ) -}}
+          {{- end -}}
+        </div>
+      </article>
+    {{ end }}
+  {{ end }}
+</div>
+

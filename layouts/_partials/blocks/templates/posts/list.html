@@ -3,7 +3,7 @@
     {{ with site.GetPage .path }}
       {{- $direction := "" -}}
       {{ if .Params.image }}
-        {{- $direction = partial "GetImageDirection" .Params.image -}}
+        {{- $direction = partial "commons/image/helpers/GetDirection" .Params.image -}}
       {{ end }}
       <article class='post {{ $direction }}' itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-content">
