@@ -7,7 +7,7 @@
       {{ end }}
       <article class='post {{ $direction }}' itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-content">
-          {{- $title := partial "PrepareHTML" .Title -}}
+          {{- $title := safeHTML .Title -}}
           {{- $linkTitle := i18n "commons.more_aria" (dict "Title" $title) -}}
           {{- $url := .Params.summary | plainify -}}
           <h2>
