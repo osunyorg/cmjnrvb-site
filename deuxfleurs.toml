@@ -15,126 +15,126 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/2023-11-20-harvard-the-legacy-of-slavery/index.html"
+from = "/2023-11-20-harvard-the-legacy-of-slavery/"
 to = "/projets/2023-11-20-harvard-the-legacy-of-slavery/"
 
 [[redirects]]
-from = "/projets/2024-01-10-mediapart/index.html"
+from = "/projets/2024-01-10-mediapart/"
 to = "/projets/2023-11-10-mediapart/"
 
 [[redirects]]
-from = "/ux/index.html"
+from = "/ux/"
 to = "/projets/ux/"
 
 [[redirects]]
-from = "/archives/2024-01-10-mediapart/index.html"
+from = "/archives/2024-01-10-mediapart/"
 to = "/projets/2023-11-10-mediapart/"
 
 [[redirects]]
-from = "/projets/2023-12-04-ensad/index.html"
+from = "/projets/2023-12-04-ensad/"
 to = "/projets/2024-01-30-ensad/"
 
 [[redirects]]
-from = "/projets/2024-01-10-mep/index.html"
+from = "/projets/2024-01-10-mep/"
 to = "/projets/2023-12-01-mep/"
 
 [[redirects]]
-from = "/archives/2023-12-08-lac-project/index.html"
+from = "/archives/2023-12-08-lac-project/"
 to = "/projets/2023-12-08-lac-project/"
 
 [[redirects]]
-from = "/projets/2024-01-10-harvard-the-legacy-of-slavery/index.html"
+from = "/projets/2024-01-10-harvard-the-legacy-of-slavery/"
 to = "/projets/2023-11-20-harvard-the-legacy-of-slavery/"
 
 [[redirects]]
-from = "/archives/ux/index.html"
+from = "/archives/ux/"
 to = "/projets/ux/"
 
 [[redirects]]
-from = "/archives/design/index.html"
+from = "/archives/design/"
 to = "/projets/design/"
 
 [[redirects]]
-from = "/projets/2024-01-10-ensad/index.html"
+from = "/projets/2024-01-10-ensad/"
 to = "/projets/2024-01-30-ensad/"
 
 [[redirects]]
-from = "/takumi-kobayashi/projets/index.html"
+from = "/takumi-kobayashi/projets/"
 to = "/equipe/takumi-kobayashi/projets/"
 
 [[redirects]]
-from = "/motion/index.html"
+from = "/motion/"
 to = "/projets/motion/"
 
 [[redirects]]
-from = "/2024-10-28-centenaire-de-la-serre-de-la-madone/index.html"
+from = "/2024-10-28-centenaire-de-la-serre-de-la-madone/"
 to = "/projets/2024-10-28-centenaire-de-la-serre-de-la-madone/"
 
 [[redirects]]
-from = "/2023-11-10-mediapart/index.html"
+from = "/2023-11-10-mediapart/"
 to = "/projets/2023-11-10-mediapart/"
 
 [[redirects]]
-from = "/archives/2024-01-10-mep/index.html"
+from = "/archives/2024-01-10-mep/"
 to = "/projets/2023-12-01-mep/"
 
 [[redirects]]
-from = "/archives/2024-01-10-ensad/index.html"
+from = "/archives/2024-01-10-ensad/"
 to = "/projets/2024-01-30-ensad/"
 
 [[redirects]]
-from = "/archives/identity/index.html"
+from = "/archives/identity/"
 to = "/projets/identity/"
 
 [[redirects]]
-from = "/2024-11-21-recits-recettes/index.html"
+from = "/2024-11-21-recits-recettes/"
 to = "/projets/2024-11-21-recits-recettes/"
 
 [[redirects]]
-from = "/archives/index.html"
+from = "/archives/"
 to = "/projets/"
 
 [[redirects]]
-from = "/interactive-design/index.html"
+from = "/interactive-design/"
 to = "/projets/interactive-design/"
 
 [[redirects]]
-from = "/2023-12-01-mep/index.html"
+from = "/2023-12-01-mep/"
 to = "/projets/2023-12-01-mep/"
 
 [[redirects]]
-from = "/archives/2024-01-10-harvard-the-legacy-of-slavery/index.html"
+from = "/archives/2024-01-10-harvard-the-legacy-of-slavery/"
 to = "/projets/2023-11-20-harvard-the-legacy-of-slavery/"
 
 [[redirects]]
-from = "/2025-02-17-taethir/index.html"
+from = "/2025-02-17-taethir/"
 to = "/projets/2025-02-17-taethir/"
 
 [[redirects]]
-from = "/actualites/index.html"
+from = "/actualites/"
 to = "/projets/"
 
 [[redirects]]
-from = "/takumi-kobayashi/index.html"
+from = "/takumi-kobayashi/"
 to = "/equipe/takumi-kobayashi/"
 
 [[redirects]]
-from = "/design/index.html"
+from = "/design/"
 to = "/projets/design/"
 
 [[redirects]]
-from = "/identity/index.html"
+from = "/identity/"
 to = "/projets/identity/"
 
 [[redirects]]
-from = "/2024-01-30-ensad/index.html"
+from = "/2024-01-30-ensad/"
 to = "/projets/2024-01-30-ensad/"
 
 [[redirects]]
-from = "/2023-12-08-lac-project/index.html"
+from = "/2023-12-08-lac-project/"
 to = "/projets/2023-12-08-lac-project/"
 
 [[redirects]]
-from = "/actualites/2023-12-08-lac-project/index.html"
+from = "/actualites/2023-12-08-lac-project/"
 to = "/projets/2023-12-08-lac-project/"
 
